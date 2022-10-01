@@ -21,7 +21,11 @@ public class App
 //    	System.out.println("Item bean "+ item);
 //    	
     	//get the child bean calling over iocContainer
-    	Order order= (Order)iocContainer.getBean("Order");
+    	Order order= (Order)iocContainer.getBean("Order_1");
+    	System.out.println("Order bean "+ order);
+    	 order= (Order)iocContainer.getBean("Order_1");
+    	System.out.println("Order bean "+ order);
+    	 order= (Order)iocContainer.getBean("Order");
     	System.out.println("Order bean "+ order);
     	
 //    	Map<String , Order> mapOfOrders = iocContainer.getBeansOfType(com.dap.practice.Order.class);

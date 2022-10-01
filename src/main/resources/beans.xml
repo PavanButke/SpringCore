@@ -30,11 +30,11 @@
        <property name="Item" ref="Item"></property>
        <property name="title" value="Purchase of Items."></property>
     </bean>
-     <bean id="Order_1" class="com.dap.practice.Order" lazy-init="true">
+     <bean id="Order_1" class="com.dap.practice.Order" scope="prototype" >
        <property name="Item" ref="Item_1"></property>
        <property name="title" value="Purchase of Items."></property>
     </bean>
-     <bean id="Order_2" class="com.dap.practice.Order" >
+     <bean id="Order_2" class="com.dap.practice.Order" destroy-method="destroyMyMethod">
        <property name="Item" ref="Item_2"></property>
        <property name="title" value="Purchase of Items."></property>
     </bean>

@@ -23,7 +23,10 @@ public class Order {
 	public void initMyMethod() {
 		System.out.println("Inside mY Init Method");
 	}
-
+	
+	public void destroyMyMethod() {
+		System.out.println("Inside Destroy Init Method");
+	}
 	public Item getItem() {
 		return item;
 	}
