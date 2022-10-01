@@ -7,14 +7,21 @@ public class Order {
 	private Item item;
 	private String title;
 
+	
 	public Order() {
 		super();
+		System.out.println("Inside Order");
 	}
 
 	public Order(Item item, String title) {
 		super();
 		this.item = item;
 		this.title = title;
+		
+	}
+	
+	public void initMyMethod() {
+		System.out.println("Inside mY Init Method");
 	}
 
 	public Item getItem() {
