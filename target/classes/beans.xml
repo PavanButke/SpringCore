@@ -11,9 +11,25 @@
        <property name="name" value="Pen"></property>
        <property name="price" value="10"></property>
     </bean>
-     
+         <bean id="Item_1" class="com.dap.practice.Item">
+       <property name="name" value="Book"></property>
+       <property name="price" value="100"></property>
+    </bean>
+        <bean id="Item_2" class="com.dap.practice.Item">
+       <property name="name" value="Pencil"></property>
+       <property name="price" value="5"></property>
+    </bean>
       <bean id="Order" class="com.dap.practice.Order">
        <property name="Item" ref="Item"></property>
        <property name="title" value="Purchase of Items."></property>
     </bean>
+     <bean id="Order_1" class="com.dap.practice.Order">
+       <property name="Item" ref="Item_1"></property>
+       <property name="title" value="Purchase of Items."></property>
+    </bean>
+     <bean id="Order_2" class="com.dap.practice.Order">
+       <property name="Item" ref="Item_2"></property>
+       <property name="title" value="Purchase of Items."></property>
+    </bean>
+    
 </beans>
